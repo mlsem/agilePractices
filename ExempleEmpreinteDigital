@@ -1,0 +1,30 @@
+
+======================================================================================================
+ Titre : Authentification avec empreinte digitale                                                                                         
+
+ Identifiant carte (ID) : Auth002        Type : fonctionnel 
+
+ Description : 
+
+   Cette fonctionnalité permettra l'authentification des utilisateurs avec 
+   leur empreinte digitale enregistrée sur leur téléphone
+
+ Règles métier : 
+
+  Règle 1 :
+  Règle 2 :
+  Règle 3 :
+
+
+ Tests d'acceptance 
+
+   Jeu de données ( JDD) : 
+   
+       username/password ( Dev ) 
+       username/password ( recette ) 
+   
+    
+   Scenarios 1 :
+   Scenarios 2 :
+   Scenarios 3 :                                                                                       
+======================================================================================================
