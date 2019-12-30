@@ -11,9 +11,12 @@
 
  Règles métier : 
 
-  Règle 1 :
-  Règle 2 :
-  Règle 3 :
+  Règle 1 :  ajoajout d'un boutton qui permettra au user d'activer l'authentification avec son empreinte digitale
+  Règle 2 :  lorsque le user clique sur le boutton empreinte digitale il pourra activer son empreinte digitale 
+  s'il a enregistré une sur son smartphone
+  Règle 3 : lorsque le user clique sur le boutton empreint digital, il pourra choisir de ne pas activer son empreinte digitale, 
+  en cliquant sur activer plus tard
+  Règle 4 : un user pourra activer son empreinte seulement avec des smartphone non rooté 
 
 
  Tests d'acceptance 
@@ -24,7 +27,30 @@
        username/password ( recette ) 
    
     
-   Scenarios 1 :
-   Scenarios 2 :
-   Scenarios 3 :                                                                                       
+   Scenarios 1 : le User active son empreinte digitale
+        Given L'utilisateur à une empreinte digitale enregistré sur son téléphone
+        And   le user est sur l'écran d'authentification
+        And   Le user vois le boutton empreinte digitale
+        When  le user clique le boutton empreinte digitale
+        And   le user clique sur activer maintenant
+        Then  l'empreinte digitale est activé 
+   
+   
+   Scenarios 2 : le User active plutard son empreinte digitale
+        Given L'utilisateur à une empreinte digitale enregistré sur son téléphone
+        And   le user est sur l'écran d'authentification
+        And   Le user vois le boutton empreinte digitale
+        When  le user clique le boutton empreinte digitale
+        And   le user clique sur activer plutard
+        Then  l'empreinte digitale n'est pas activé 
+        
+        
+   Scenarios 3 : le User ne pourra pas activer son empreinte digitale avec un smartphone rooté
+        Given L'utilisateur à une empreinte digitale enregistré sur son téléphone
+        And   le user est sur l'écran d'authentification
+        When  le user utilise un smartphone rooté 
+        Then  Le user vois le boutton empreinte digitale disactivé  
+        
+        
+      
 ======================================================================================================
