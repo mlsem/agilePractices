@@ -1,0 +1,25 @@
+======================================================================================================
+ Titre : On donne un titre pour la carte ( le nom de la fonctionnalité ou autres titre )                                                                                           
+
+ Identifiant carte (ID) : numéro identifiant ( unique )        Type : fonctionnel | Technique | anomalie  
+
+ Description : 
+
+   on donne une description simple et compréhensible
+
+ Règles métier : 
+
+  Les règles que les développeurs doivent respecter pendant le développement d'une carte (US, TS, Bug),
+  exprimé dans le language courant, le plus simple possible. 
+
+
+ Tests d'acceptance 
+
+   Jeu de données ( JDD) : 
+   
+    
+   Scenarios 1 :
+   Scenarios 2 :
+   Scenarios 3 :                                                                                       
+======================================================================================================
+
